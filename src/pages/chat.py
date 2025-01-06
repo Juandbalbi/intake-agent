@@ -130,9 +130,7 @@ class ChatApp:
 
         with st.chat_message(c.ASSISTANT_MESSAGE):
             response_placeholder = st.empty()
-            inputs = self.get_prompt_inputs(
-                agent_data.name, form, prompt, c.PromptNames.FORM_PROMPT
-            )
+            inputs = self.get_prompt_inputs(agent_data.name, form, prompt)
             stream = self.pl_client.run(
                 c.PromptNames.FORM_PROMPT,
                 input_variables=inputs,
