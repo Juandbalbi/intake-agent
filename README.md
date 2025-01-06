@@ -2,6 +2,12 @@
 
 A dynamic conversational form assistant powered by PromptLayer that transforms traditional form-filling into natural conversations. This project enables organizations to create custom AI assistants that gather information through engaging dialogue rather than static forms.
 
+## 🚀 Live Demo
+
+Try out the application: [Intake Agent Demo](https://promptlayer-intake-agent.streamlit.app/)
+
+*Note: You'll need your own OpenAI API key to test the application.*
+
 ## 🌟 Features
 
 - **Dynamic Form Builder**: Create custom forms with various field types and validation rules
