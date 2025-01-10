@@ -70,10 +70,14 @@ CHAT_MARKDOWN_STYLE = """
         .stChatInput {
             position: fixed;
             bottom: 0;
-            background-color: #0E1117;
+            background-color: var(--secondary-background-color);  /* Uses Streamlit's secondary background */
+            border: 1px solid rgba(255, 255, 255, 0.1);
             margin-bottom: 20px;
-            padding: 1rem 0;
             z-index: 999;
+        }
+        .stChatInput textarea {
+            color: var(--text-color) !important;
+            background-color: rgba(255, 255, 255, 0.05) !important;  /* Slightly lighter than background */
         }
         .main {
             padding-bottom: 70px;
