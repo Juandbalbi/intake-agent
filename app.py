@@ -3,7 +3,12 @@ import streamlit as st
 from src.pages.bot_builder import BotBuilder
 from src.pages.chat import ChatApp
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    layout="wide",
+    page_title="Intake Assistant",
+    page_icon="🤖",
+    initial_sidebar_state="expanded",
+)
 
 
 class IntakeApp:
@@ -18,7 +23,7 @@ class IntakeApp:
         )
 
     def run(self) -> None:
-        builder_tab, chat_tab = st.tabs(["Create New Agent", "Talk to Agent"])
+        chat_tab, builder_tab = st.tabs(["Talk to Agent", "Create New Agent"])
 
         with builder_tab:
             bot_builder = BotBuilder()
