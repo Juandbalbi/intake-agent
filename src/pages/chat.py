@@ -19,7 +19,7 @@ from src.utils.utils import (
 
 class ChatApp:
     def __init__(self):
-        self.pl_client = PromptLayer(settings.PROMPTLAYER_API_KEY)
+        self.pl_client = PromptLayer(settings.PROMPTLAYER_API_KEY, enable_tracing=True)
         self.initialize_session_state()
         self.setup_sidebar()
         st.markdown(c.CHAT_MARKDOWN_STYLE, unsafe_allow_html=True)
