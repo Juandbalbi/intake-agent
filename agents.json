@@ -50,7 +50,7 @@
       },
       {
         "name": "Budget",
-        "type": "Number",
+        "type": "Whole number",
         "description": "Maximum budget for the vehicle",
         "example": "35000"
       },
